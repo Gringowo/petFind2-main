@@ -1,0 +1,39 @@
+
+<ion-content>
+
+  <ion-header>
+    <ion-toolbar> 
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title *ngIf="info">
+       Bienvenido {{info.nombre}}
+      </ion-title>
+    </ion-toolbar> 
+  </ion-header>
+  <ion-row></ion-row>
+  <ion-row></ion-row>
+  <ion-card>  
+    <ion-card-header>
+      <h1>Información de usuario</h1>
+    </ion-card-header>
+  
+    <ion-card-content *ngIf="info">
+        <div class="ion-text-center">
+          <ion-img src="./assets/img/doge.png"></ion-img>
+        </div>
+        <div>
+          <ion-card-content>Correo:
+            {{info.correo}}
+          </ion-card-content>
+          <ion-card-content>Edad:
+            {{info.edad}}
+          </ion-card-content>
+        </div>
+    </ion-card-content> 
+  </ion-card>
+
+
+
+
+</ion-content>
